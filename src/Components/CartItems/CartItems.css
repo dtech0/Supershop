@@ -1,0 +1,241 @@
+
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+.cart-title {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 20px;
+  gap:20px;
+  padding: 55px;
+  background-color: #efbc1619;
+  border-radius: 33px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.continue-shopping-btn {
+  background-color: #4CAF50;
+  color: white;
+  top: 5%;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continue-shopping-btn:hover {
+  background-color: #45a049;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.select-all-container {
+  display: flex; 
+  align-items: center;
+  font-size: 25px;
+}
+
+.select-all-container input[type="checkbox"] {
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.cart-items {
+  display: grid;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item-select {
+  margin-right: 20px;
+  
+}
+
+.cart-item-image {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  font-size: 25px;
+}
+
+.cart-item-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.cart-item-price {
+  font-size: 1.1rem;
+  color: #e44d26;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.quantity-btn {
+  background-color: #f0f0f0;
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart-item-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.remove-item-btn {
+  background-color: #100303;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 25px;
+}
+
+.remove-item-btn:hover {
+  background-color: #e61313;
+}
+
+.warning-message {
+  background-color: #ffe6e6;
+  color: #ff3333;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  text-align: right;
+  
+}
+
+.cart-summary h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.order-now-btn {
+  background-color: #f90911;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.order-now-btn:hover {
+  background-color: #f70808;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.order-now-btn:focus {
+  outline: none;
+  animation: pulse 1s infinite;
+}
+

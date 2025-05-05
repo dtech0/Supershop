@@ -1,0 +1,95 @@
+/* TrackingPage.module.css */
+
+/* Ensure the parent container takes full height */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Centering the content */
+.tracking-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  height: 100%; 
+  font-size: 25px;
+}
+
+/* Title styling */
+.tracking-page-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f10b0b;
+}
+
+/* Order details section */
+.tracking-page-container .order-details {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sub-headings */
+.tracking-page-container h3,
+.tracking-page-container h4 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Order information */
+.tracking-page-container p {
+  font-size: 30px;
+  color: hsla(25, 60%, 4%, 0.961);
+  margin: 5px 0;
+}
+
+/* Status */
+.tracking-page-container .status {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Products list styling */
+.tracking-page-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tracking-page-container li {
+  margin: 15px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.tracking-page-container .product-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.tracking-page-container .product-name {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Error and Loading messages */
+.tracking-page-container .loading,
+.tracking-page-container .error {
+  font-size: 1.2rem;
+  color: #FF0000;
+  font-weight: bold;
+}

@@ -1,0 +1,93 @@
+ /* .popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 110vh;
+    padding: auto;
+}
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+
+}
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+} 
+
+ */
+
+ /* General styles for the popular section */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Use auto to let content determine height */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Center the title */
+    margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    border: none; /* Remove default border */
+    margin: 0; /* Remove extra margin */
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 30px;
+    justify-content: center; /* Center items within the container */
+}
+
+/* Styles for individual items to prevent overlap */
+.popular-item img {
+    max-width: 100%; /* Ensure images do not exceed container size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below images */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .popular h1 {
+        font-size: 40px; /* Adjust title size for smaller screens */
+    }
+
+    .popular-item {
+        gap: 20px; /* Reduce gap between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .popular h1 {
+        font-size: 30px; /* Further adjust title size for very small screens */
+    }
+
+    .popular-item {
+        gap: 15px; /* Further reduce gap for compact layout */
+    }
+}
