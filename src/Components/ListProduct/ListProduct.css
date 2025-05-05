@@ -1,0 +1,329 @@
+/* 
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list-product {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-product h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+  }
+  
+  .listproduct-allproducts {
+    margin-top: 20px;
+  }
+  
+  .listproduct-format {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+  }
+  
+  .listproduct-format:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .product-image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .remove-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .remove-icon:hover {
+    background: #c82333;
+  }
+  
+  .listproduct-format p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .listproduct-format-main,
+    .listproduct-format {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .product-image-container {
+      grid-column: span 3;
+      margin: 0 auto;
+    }
+  
+    .listproduct-format p {
+      font-size: 14px;
+    }
+  }
+   */
+
+
+   /* ListProduct.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.list-product {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-product h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  font-size: 23px;
+}
+
+.listproduct-allproducts {
+  margin-top: 10px;
+}
+
+.listproduct-format {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease;
+}
+
+.listproduct-format:hover {
+  background-color: #f9f9f9;
+}
+
+.product-image-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-icon:hover {
+  background: #c82333;
+}
+
+.listproduct-format p {
+  margin: 0;
+  font-size: 30px;
+  color: #555;
+  text-align: center;
+}
+
+/* Styles for edit form inputs */
+input[type='number'] {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.remove-icon {
+  background-color: #dc3545;
+}
+
+button.remove-icon:hover {
+  background-color: #c82333;
+}
+
+/* Styling for edit section */
+div button.cancel {
+  background-color: #e30606;
+}
+
+div button.cancel:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .listproduct-format-main,
+  .listproduct-format {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product-image-container {
+    grid-column: span 3;
+    margin: 0 auto;
+  }
+
+  .listproduct-format p {
+    font-size: 18px;
+  }
+}
+
+
+/* Edit Button */
+.edit-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Save Button */
+.save-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: darkblue;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: darkred;
+}
+
+
+.red-alert {
+  background-color: red;
+  color: white;
+}
