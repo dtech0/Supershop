@@ -182,10 +182,10 @@
     position: absolute;
     top: 30px;
     transform: translateX(-50%);
-    left: 45%;
-    width: 60%; 
+    left: 44%;
+    width: 4%; 
     z-index: 10;
-    width: 40%; 
+    width: 30%; 
     margin: 0 auto;
   }
   
